@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIVA STREETFOOD - Authentic Indonesian Street Food</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <nav class="container">
+            <div class="logo">RIVA</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="floating-element">🍜</div>
+        <div class="floating-element">🥘</div>
+        <div class="floating-element">🍛</div>
+        
+        <div class="hero-content">
+            <h1>RIVA STREETFOOD</h1>
+            <p>Authentic Indonesian Street Food Experience</p>
+            <a href="#order" class="cta-button">Order Now</a>
+        </div>
+        
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down fa-2x"></i>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title">OUR MENU</h2>
+            
+            <div class="menu-grid">
+                <div class="menu-category">
+                    <div class="category-header">CORNDOG SALTY/ASIN</div>
+                    <div class="menu-item">
+                        <span class="item-name">Sosis Moza Small</span>
+                        <span class="item-price">10K</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Sosis Moza Medium</span>
+                        <span class="item-price">15K</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Sosis Moza Jumbo</span>
+                        <span class="item-price">20K</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Full Moza Small</span>
+                        <span class="item-price">10K</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Full Moza Medium</span>
+                        <span class="item-price">15K</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Full Moza Jumbo</span>
+                        <span class="item-price">20K</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Hotang</span>
+                        <span class="item-price">20K</span>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <div class="category-header">CORNDOG SWEET/MANIS</div>
+                    <div class="menu-item">
+                        <span class="item-name">Full Moza Sweet Small</span>
+                        <span class="item-price">12K</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Full Moza Sweet Medium</span>
+                        <span class="item-price">17K</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Full Moza Sweet Jumbo</span>
+                        <span class="item-price">22K</span>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <div class="category-header">RABOKKI</div>
+                    <div class="menu-item">
+                        <span class="item-name">Rabokki Original</span>
+                        <span class="item-price">20K</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Rabokki Moza</span>
+                        <span class="item-price">25K</span>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <div class="category-header">TOPPINGS & CROFFLE</div>
+                    <div class="menu-item">
+                        <span class="item-name">Cokelat</span>
+                        <span class="item-price">-</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Tiramisu</span>
+                        <span class="item-price">-</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Matcha</span>
+                        <span class="item-price">-</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Strawberry</span>
+                        <span class="item-price">-</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Croffle Original</span>
+                        <span class="item-price">5K/PCS</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Croffle with Topping</span>
+                        <span class="item-price">8K/PCS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="order" class="order-section">
+        <div class="container">
+            <h2 class="section-title">ORDER NOW</h2>
+            
+            <form class="order-form" id="orderForm">
+                <div class="form-group">
+                    <label for="customerName">Nama Lengkap *</label>
+                    <input type="text" id="customerName" name="customerName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="customerPhone">Nomor WhatsApp *</label>
+                    <input type="tel" id="customerPhone" name="customerPhone" placeholder="08xxxxxxxxxx" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="customerAddress">Alamat Lengkap *</label>
+                    <textarea id="customerAddress" name="customerAddress" rows="3" placeholder="Masukkan alamat lengkap untuk pengiriman" required></textarea>
+                </div>
+
+                <h3 style="color: #20B2AA; margin-bottom: 20px; font-size: 1.5rem;">Pilih Menu</h3>
+
+                <!-- Corndog Salty/Asin -->
+                <div class="order-item">
+                    <div class="item-header">
+                        <span class="item-name-order">CORNDOG SALTY/ASIN</span>
+                    </div>
+                    
+                    <div class="menu-item-order" data-name="Sosis Moza Small" data-price="10000">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                            <span>Sosis Moza Small - Rp 10.000</span>
+                            <div class="quantity-control">
+                                <button type="button" class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+                                <input type="number" class="quantity-input" value="0" min="0" onchange="updateTotal()">
+                                <button type="button" class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item-order" data-name="Sosis Moza Medium" data-price="15000">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                            <span>Sosis Moza Medium - Rp 15.000</span>
+                            <div class="quantity-control">
+                                <button type="button" class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+                                <input type="number" class="quantity-input" value="0" min="0" onchange="updateTotal()">
+                                <button type="button" class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item-order" data-name="Sosis Moza Jumbo" data-price="20000">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                            <span>Sosis Moza Jumbo - Rp 20.000</span>
+                            <div class="quantity-control">
+                                <button type="button" class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+                                <input type="number" class="quantity-input" value="0" min="0" onchange="updateTotal()">
+                                <button type="button" class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item-order" data-name="Full Moza Small" data-price="10000">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                            <span>Full Moza Small - Rp 10.000</span>
+                            <div class="quantity-control">
+                                <button type="button" class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+                                <input type="number" class="quantity-input" value="0" min="0" onchange="updateTotal()">
+                                <button type="button" class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item-order" data-name="Full Moza Medium" data-price="15000">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                            <span>Full Moza Medium - Rp 15.000</span>
+                            <div class="quantity-control">
+                                <button type="button" class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+                                <input type="number" class="quantity-input" value="0" min="0" onchange="updateTotal()">
+                                <button type="button" class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item-order" data-name="Full Moza Jumbo" data-price="20000">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                            <span>Full Moza Jumbo - Rp 20.000</span>
+                            <div class="quantity-control">
+                                <button type="button" class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+                                <input type="number" class="quantity-input" value="0" min="0" onchange="updateTotal()">
+                                <button type="button" class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item-order" data-name="Hotang" data-price="20000">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                            <span>Hotang - Rp 20.000</span>
+                            <div class="quantity-control">
+                                <button type="button" class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+                                <input type="number" class="quantity-input" value="0" min="0" onchange="updateTotal()">
+                                <button type="button" class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Corndog Sweet/Manis -->
+                <div class="order-item">
+                    <div class="item-header">
+                        <span class="item-name-order">CORNDOG SWEET/MANIS</span>
+                    </div>
+                    
+                    <div class="menu-item-order" data-name="Full Moza Sweet Small" data-price="12000">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                            <span>Full Moza Sweet Small - Rp 12.000</span>
+                            <div class="quantity-control">
+                                <button type="button" class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+                                <input type="number" class="quantity-input" value="0" min="0" onchange="updateTotal()">
+                                <button type="button" class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item-order" data-name="Full Moza Sweet Medium" data-price="17000">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                            <span>Full Moza Sweet Medium - Rp 17.000</span>
+                            <div class="quantity-control">
+                                <button type="button" class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+                                <input type="number" class="quantity-input" value="0" min="0" onchange="updateTotal()">
+                                <button type="button" class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item-order" data-name="Full Moza Sweet Jumbo" data-price="22000">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                            <span>Full Moza Sweet Jumbo - Rp 22.000</span>
+                            <div class="quantity-control">
+                                <button type="button" class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+                                <input type="number" class="quantity-input" value="0" min="0" onchange="updateTotal()">
+                                <button type="button" class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rabokki -->
+                <div class="order-item">
+                    <div class="item-header">
+                        <span class="item-name-order">RABOKKI</span>
+                    </div>
+                    
+                    <div class="menu-item-order" data-name="Rabokki Original" data-price="20000">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                            <span>Rabokki Original - Rp 20.000</span>
+                            <div class="quantity-control">
+                                <button type="button" class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+                                <input type="number" class="quantity-input" value="0" min="0" onchange="updateTotal()">
+                                <button type="button" class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item-order" data-name="Rabokki Moza" data-price="25000">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                            <span>Rabokki Moza - Rp 25.000</span>
+                            <div class="quantity-control">
+                                <button type="button" class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+                                <input type="number" class="quantity-input" value="0" min="0" onchange="updateTotal()">
+                                <button type="button" class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Croffle -->
+                <div class="order-item">
+                    <div class="item-header">
+                        <span class="item-name-order">CROFFLE</span>
+                    </div>
+                    
+                    <div class="menu-item-order" data-name="Croffle Original" data-price="5000">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                            <span>Croffle Original - Rp 5.000/pcs</span>
+                            <div class="quantity-control">
+                                <button type="button" class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+                                <input type="number" class="quantity-input" value="0" min="0" onchange="updateTotal()">
+                                <button type="button" class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item-order" data-name="Croffle with Topping" data-price="8000">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                            <span>Croffle with Topping - Rp 8.000/pcs</span>
+                            <div class="quantity-control">
+                                <button type="button" class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+                                <input type="number" class="quantity-input" value="0" min="0" onchange="updateTotal()">
+                                <button type="button" class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+                            </div>
+                        </div>
+                        
+                        <div class="topping-options">
+                            <label class="topping-checkbox">
+                                <input type="checkbox" name="toppings" value="Cokelat">
+                                <span>Cokelat</span>
+                            </label>
+                            <label class="topping-checkbox">
+                                <input type="checkbox" name="toppings" value="Tiramisu">
+                                <span>Tiramisu</span>
+                            </label>
+                            <label class="topping-checkbox">
+                                <input type="checkbox" name="toppings" value="Matcha">
+                                <span>Matcha</span>
+                            </label>
+                            <label class="topping-checkbox">
+                                <input type="checkbox" name="toppings" value="Strawberry">
+                                <span>Strawberry</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">Catatan Tambahan (Opsional)</label>
+                    <textarea id="notes" name="notes" rows="3" placeholder="Catatan khusus untuk pesanan Anda..."></textarea>
+                </div>
+
+                <div class="order-summary">
+                    <div class="total-price">
+                        Total: Rp <span id="totalPrice">0</span>
+                    </div>
+                    <button type="submit" class="submit-order-btn" id="submitBtn" disabled>
+                        <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">GET IN TOUCH</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 20px;">Order now and taste the authentic Indonesian street food!</p>
+            
+            <div class="contact-buttons">
+                <a href="https://wa.me/6287779515854" class="contact-btn" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    Order via WhatsApp
+                </a>
+                <a href="https://www.instagram.com/riva_streetfood?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="contact-btn" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    Follow us on Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 RIVA STREETFOOD. All rights reserved. | Authentic Indonesian Street Food Experience</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
